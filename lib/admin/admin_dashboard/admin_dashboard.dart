@@ -26,7 +26,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
   int currentPage = 0;
 
   final List<Widget> pages = [
-      AnalyticsScreen(),
+    AnalyticsScreen(),
     AllUsersScreen(),
     NewUsersScreen(),
     BlockedSellerScreen(),
@@ -34,7 +34,6 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
     ProductManagementScreen(),
     TransactionsAndBidScreen(),
 
-  
     // BlockedSellerScreen(),
   ];
   void changePage(int index) {
@@ -59,7 +58,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
                   // ),
                   ),
             ),
-              _buildDrawerTile(
+            _buildDrawerTile(
               context,
               icon: Icons.analytics_outlined,
               title: 'Analytics',
@@ -95,19 +94,12 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
               title: 'Product Management',
               index: 5,
             ),
-               _buildDrawerTile(
-              context,
-              icon: Icons.new_label_rounded,
-              title: 'Product Management',
-              index: 5,
-            ),
-                 _buildDrawerTile(
+            _buildDrawerTile(
               context,
               icon: Icons.money_outlined,
               title: 'Transactions & Bids',
               index: 6,
             ),
-          
           ],
         ),
       ),

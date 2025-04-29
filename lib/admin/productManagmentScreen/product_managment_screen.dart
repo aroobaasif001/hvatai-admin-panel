@@ -99,7 +99,9 @@ class _ProductManagementScreenState extends State<ProductManagementScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColor.primary,
+       // backgroundColor: AppColor.primary,
+        automaticallyImplyLeading: false,
+        centerTitle: true,
         title: const Text('Product Management'),
         actions: [
           IconButton(

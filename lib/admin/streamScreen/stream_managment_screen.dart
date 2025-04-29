@@ -55,21 +55,23 @@ class _StreamManagementScreenState extends State<StreamManagementScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColor.primary,
+        //backgroundColor: AppColor.primary,
+        centerTitle: true,
+        automaticallyImplyLeading: false,
         title: const Text('Stream Management'),
         actions: [
           // IconButton(
           //   icon: const Icon(Icons.search),
           //   onPressed: () {},
           // ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: CircleAvatar(
-              backgroundImage: NetworkImage(
-                "https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?fm=jpg&q=60&w=3000&ixlib=b-4.0.3&ixid=M3wxMjA3fDB8MHxZZWFyY",
-              ),
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          //   child: CircleAvatar(
+          //     backgroundImage: NetworkImage(
+          //       "https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?fm=jpg&q=60&w=3000&ixlib=b-4.0.3&ixid=M3wxMjA3fDB8MHxZZWFyY",
+          //     ),
+          //   ),
+          // ),
         ],
       ),
       body: Padding(
