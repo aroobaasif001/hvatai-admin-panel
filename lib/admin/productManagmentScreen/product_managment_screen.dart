@@ -828,10 +828,10 @@ class ProductCard extends StatelessWidget {
                       ),
                       onPressed: onToggleBlock,
                     ),
-                    IconButton(
-                      icon: const Icon(Icons.edit, size: 20),
-                      onPressed: onEdit,
-                    ),
+                    // IconButton(
+                    //   icon: const Icon(Icons.edit, size: 20),
+                    //   onPressed: onEdit,
+                    // ),
                   ],
                 ),
               ],
