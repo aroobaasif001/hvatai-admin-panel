@@ -656,9 +656,9 @@ class _ApprovedUserScreenState extends State<ApprovedUserScreen> {
                               DataCell(Text(user.gender ?? "Unknown Gender")),
                               DataCell(
                                   Text(user.country ?? "Unknown Age Group")),
-                              DataCell(VoiceRecordingWidget(
-                                audioUrl: voiceRecordingUrl,
-                              )),
+                              // DataCell(VoiceRecordingWidget(
+                              //   audioUrl: voiceRecordingUrl,
+                              // )),
                               DataCell(Text(user.occupation ?? "Unknown")),
                               DataCell(
                                   Text(user.city ?? "Unknown Location")),
