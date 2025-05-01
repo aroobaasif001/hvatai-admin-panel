@@ -9,6 +9,7 @@ import '../analyticsScreen/analytics_screen.dart';
 import '../blocked_users/blocked_users.dart';
 import '../newUserScreen/new_users_screen.dart';
 import '../productManagmentScreen/product_managment_screen.dart';
+import '../reportScreen/admin_report_screen.dart';
 import '../streamScreen/stream_managment_screen.dart';
 import '../transactionAndBids/transactions_and_bid_screen.dart';
 
@@ -32,6 +33,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
     BlockedSellerScreen(),
     StreamManagementScreen(),
     ProductManagementScreen(),
+    AdminReportsScreen()
    // TransactionsAndBidScreen(),
 
     // BlockedSellerScreen(),
@@ -93,6 +95,12 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
               icon: Icons.new_label_rounded,
               title: 'Product Management',
               index: 4,
+            ),
+              _buildDrawerTile(
+              context,
+              icon: Icons.report,
+              title: 'Reports',
+              index: 5,
             ),
             // _buildDrawerTile(
             //   context,
