@@ -22,7 +22,10 @@ class UserModel {
   int? uniqueId;
   String? voiceRecording;
   DateTime? createdDate;
-
+  String? street;
+  String? apartment;
+  List<String>? interests;
+  List<String>? detailedInterests;
   UserModel({
     this.userId,
     this.name,
@@ -45,6 +48,10 @@ class UserModel {
     this.uniqueId,
     this.voiceRecording,
     this.createdDate,
+    this.street,
+    this.apartment,
+    this.interests,
+    this.detailedInterests,
   });
 
   factory UserModel.fromJson(Map<String, dynamic> json) {
@@ -72,6 +79,10 @@ class UserModel {
       createdDate: json['createdDate'] != null
           ? (json['createdDate'] as Timestamp).toDate()
           : null,
+      street: json['street'] ?? "",
+      apartment: json['apartment']?.toString() ?? "",
+      interests: List<String>.from(json['interests'] ?? []),
+      detailedInterests: List<String>.from(json['detailedInterests'] ?? []),
     );
   }
   Map<String, dynamic> toJson() {
@@ -97,6 +108,10 @@ class UserModel {
       'uniqueId': uniqueId,
       'voiceRecording': voiceRecording,
       'createdDate': createdDate?.toIso8601String(),
+      'street': street,
+      'apartment': apartment,
+      'interests': interests,
+      'detailedInterests': detailedInterests,
     };
   }
 }
