@@ -1,9 +1,11 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:hvatai_admin_panel/admin/addCategoryScreen/add_category_screen.dart';
 import 'package:hvatai_admin_panel/admin/approvedUsers/approved_user_screen.dart';
 import 'package:hvatai_admin_panel/components/Appcolors.dart';
 import 'package:hvatai_admin_panel/screens/loginScreens/login_screen.dart';
+import '../Payments/payment_screen.dart';
 import '../allUsersScreen/all_user_screen.dart';
 import '../analyticsScreen/analytics_screen.dart';
 import '../blocked_users/blocked_users.dart';
@@ -33,7 +35,9 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
     BlockedSellerScreen(),
     StreamManagementScreen(),
     ProductManagementScreen(),
-    AdminReportsScreen()
+    AdminReportsScreen(),
+    AddCategoryScreen(),
+    AdminPaymentsScreen()
    // TransactionsAndBidScreen(),
 
     // BlockedSellerScreen(),
@@ -101,6 +105,18 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
               icon: Icons.report,
               title: 'Reports',
               index: 5,
+            ),
+            _buildDrawerTile(
+              context,
+              icon: Icons.add,
+              title: 'Add Categories',
+              index: 6,
+            ),
+            _buildDrawerTile(
+              context,
+              icon: Icons.money,
+              title: 'Payments',
+              index: 7,
             ),
             // _buildDrawerTile(
             //   context,
